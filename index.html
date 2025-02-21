@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional</title>
+</head>
+<body>
+    
+    <script>
+//Develop a webpage that displays a special message based on the current day of the week.
+
+    let week = prompt("enter the week").toLocaleLowerCase()
+    if(week == "monday"){
+        console.log("Start your week strong!")
+    }else if(week == "tuesday"){
+        console.log('“Keep going!”')
+    }else if(week == "wednesday"){
+        console.log('“Halfway there!”')
+    }else if(week == "thursday"){
+        console.log('“Almost the weekend!”')
+    }else if(week == "friday"){
+        console.log('“Happy Friday!”')
+    }else if(week == "saturday" || week == "sunday"){
+        console.log('“Enjoy your weekend!”')
+    }
+    else{
+        console.log("enter the valid week")
+    }
+
+
+    // Traffic Light SimulationScenario: Simulate a traffic light system.
+
+    let color = prompt("enter the color").toLowerCase()
+    switch(color){
+        case "red" : {
+            console.log('“Stop”')
+            break;
+        }
+        case "yellow" : {
+            console.log('“Get Ready”')
+            break;
+        }
+        case "green" : {
+            console.log('“Go”')
+            break;
+        }
+        default:{
+            console.log("enter the traffic color")
+        }
+    }
+ 
+  //  Discount Calculator Scenario: Calculate the discount based on the total purchase amount.
+
+    let amount = +prompt("enter the amount")
+    if(amount > 200){
+        console.log('15% discount')
+    }else if(amount >= 101 && amount <200){
+        console.log("10% discount")
+    }else if(amount >= 50 && amount <100){
+        console.log("5% discount")
+    }
+    else{
+        console.log("No discount")
+    }
+
+   // Restaurant MenuScenario: You are developing a restaurant menu system that provides the price of a dish based on the dish name.
+    
+   let menu = prompt("enter the menu").toLowerCase()
+   switch(menu){
+    case "biryani":{
+        console.log("you have ordered biryani")
+        break;
+    }
+    case "eggrice":{
+        console.log("you have ordered eggrice")
+        break;
+    }
+    case "noodles":{
+        console.log("you have ordered noodles")
+        break;
+    }
+    default:{
+        console.log("sorry! the item is not in our resturent")
+    }
+   }
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
